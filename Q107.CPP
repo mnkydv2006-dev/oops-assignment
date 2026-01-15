@@ -1,0 +1,33 @@
+
+//NAME :-MAYANK YADAV
+//COURSE: BTECH(CSE)
+//SEC:(A) 
+//ROLL NO:-34
+    
+    
+#include<iostream>
+using namespace std ;
+ 
+class shape{
+    public:
+    virtual void area()=0;
+};
+class square : public shape{
+    public:
+    void area(){
+        cout<<":-area of square = side * side"<<endl;
+    }
+};
+    
+    
+int main(){
+    
+  shape *s;
+  square sq;
+  s= &sq;
+  s->area();  
+     
+    
+     return 0;
+    
+}
