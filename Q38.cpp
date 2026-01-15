@@ -1,0 +1,28 @@
+//NAME : MAYANK KUMAR YADAV 
+//COURSE: BTECH(CSE)
+//SEC: "A"
+//ROLL NO: 34
+    
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    char str1[100], str2[100];
+    int i = 0;
+
+    cout << "Enter string: ";
+    cin.getline(str1, 100);
+
+    while (str1[i] != '\0') {
+        str2[i] = str1[i];
+        i++;
+    }
+    str2[i] = '\0';
+
+    cout << "Copied string: " << str2;
+    return 0;
+}
